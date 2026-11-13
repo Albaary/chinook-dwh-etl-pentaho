@@ -33,7 +33,7 @@ Pertanyaan bisnis yang ingin dijawab:
 
 ## Alur Pengerjaan
 
-![Pipeline alur pengerjaan proyek](<Team 7_Kak Ryan_Mini Project_Celerates_files/image1.jpg>)
+![Pipeline alur pengerjaan proyek](<Team 7_Kak Ryan_Mini Project_Celerates_files/media/image1.jpg>)
 
 1. **Eksplorasi data mentah.** Cek struktur 11 tabel, jumlah baris, nilai kosong, dan duplikasi.
 2. **Staging.** Salinan tabel operasional dimuat otomatis ke database `staging_chinook`.
@@ -76,7 +76,7 @@ Pertanyaan bisnis yang ingin dijawab:
 
 ### Star Schema
 
-![Rancangan star schema](<Team 7_Kak Ryan_Mini Project_Celerates_files/image10.jpg>)
+![Rancangan star schema](<Team 7_Kak Ryan_Mini Project_Celerates_files/media/image10.jpg>)
 
 | Tabel | Keterangan | Penanganan perubahan |
 |---|---|---|
