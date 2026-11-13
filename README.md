@@ -33,7 +33,7 @@ Pertanyaan bisnis yang ingin dijawab:
 
 ## Alur Pengerjaan
 
-![Pipeline alur pengerjaan proyek](docs/pipeline.jpg)
+![Pipeline alur pengerjaan proyek](D:\KULIAH\SEMESTER 5\MOBILITAS AKADEMIK\Mini Project\Team 7_Kak Ryan_Mini Project_Celerates_files\media\image1.jpg)
 
 1. **Eksplorasi data mentah.** Cek struktur 11 tabel, jumlah baris, nilai kosong, dan duplikasi.
 2. **Staging.** Salinan tabel operasional dimuat otomatis ke database `staging_chinook`.
