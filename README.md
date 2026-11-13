@@ -56,7 +56,7 @@ Pertanyaan bisnis yang ingin dijawab:
 
 ```
 .
-├── Staging Area/        # job dan transformasi staging
+├── Staging Area/   # job dan transformasi staging
 ├── Dimension/      # transformasi tabel dimensi
 ├── Fact Table/     # transformasi fact_sales
 ├── Datamart/       # transformasi data mart dan hasil CSV
