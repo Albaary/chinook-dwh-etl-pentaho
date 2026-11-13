@@ -1,0 +1,31 @@
+Panduan Mengisi Tabel Dimensi di Pentaho & PostgreSQL
+Buat Database Baru & Jalankan Skrip DDL di DBeaver
+-Buka DBeaver dan hubungkan ke koneksi PostgreSQL kamu.
+-Klik kanan pada folder Databases ----> pilih Create New Database.
+-Beri nama database: dwh_chinook, lalu klik OK.
+-Klik kanan folder Schemas di dalam dwh_chinook --> Create New Schema --> beri nama dimension(lakukan hal sama buat schema fact table)
+
+Buka File Transformation (.ktr) di Pentaho
+-Jalankan spoon bat
+-Klik File ---> Open, lalu pilih salah satu file .ktr (misal: dim_track.ktr).
+Sesuaikan Koneksi Database (dwh_chinook)
+-Pada panel sebelah kiri, pilih tab View.
+-Buka folder Database connections.
+-Klik kanan pada dwh_chinook ---> pilih Edit.  
+-Sesuaikan detail koneksi dengan database PostgreSQL di laptopmu (buat passwordnya isi dengan passwordmu sendiri yang terkoneksi di postgres)
+-Klik tombol Test untuk memastikan koneksi sukses, lalu klik OK.
+
+Pembuatan Tabel Otomatis dari Fitur SQL Pentaho
+-dim_customer.ktr (SCD Type 2):	
+	Klik 2x step Dimension lookup/update.
+	Klik tombol SQL di bagian bawah.
+	Sesuaikan query-nya: pastikan tipe data sk_customer berupa INTEGER, 	lalu urutan date_from dan date_to ditaruh di paling bawah setelah 	email. Klik Execute, Close, lalu klik OK.
+-dim_track.ktr (SCD Type 1):
+	Klik 2x step Insert / Update.
+	Klik tombol SQL di bagian bawah, klik Execute, Close, lalu klik OK.
+-dim_employee.ktr & dim_date.ktr:
+	Klik 2x step Table Output.
+	Klik tombol SQL di bagian bawah, klik Execute, Close, lalu klik OK.
+
+Jalankan Transformation (ETL)
+	Klik tombol Run di Pentaho pada masing-masing file .ktr. Pastikan semua step muncul centang hijau.

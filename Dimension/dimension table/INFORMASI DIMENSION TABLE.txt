@@ -1,0 +1,9 @@
+INFORMASI DIMENSION TABLE
+1. dim_track
+	terdapat sekitar 3503 baris dan digunakan buat SCD Type 1
+2. dim_customer
+	terdapat sekitar 59 baris dan digunakan buat SCD Type 2 (oleh karena itu di bagian atas ada row kosong)
+3. dim_employee 
+	terdapat sekitar 8 baris
+4. dim_date
+	terdapat sekitar 354 baris (ini karena querynya pake DISTINCT)

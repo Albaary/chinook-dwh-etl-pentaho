@@ -1,0 +1,15 @@
+Table Customer
+- Missing Values
+- first_name sama last_name digabung jadi 1 kolom
+
+Table Invoice
+- Missing Values
+- Memecah timestamp pada invoice_date menjadi kolom turunan independen (Tahun, Kuartal, Bulan, Hari, Weekday/Weekend) 
+untuk memfasilitasi analisis tren time-series dan efek musiman.
+
+
+Table Playlist
+- Redundansi Data
+
+Table Track
+- Mengubah milliseconds di tabel track menjadi kategori durasi lagu (Pendek, Standar, Epik)
